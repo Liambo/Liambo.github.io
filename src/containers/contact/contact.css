@@ -1,0 +1,7 @@
+.liambo__contact-content p {
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--colour-text);
+    text-align: center;
+}

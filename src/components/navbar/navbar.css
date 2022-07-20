@@ -1,9 +1,13 @@
+.active {
+    color: #777;
+}
+
 .liambo__navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 2rem 6rem;
+    padding: 2rem 0rem 2rem 4rem;
 }
 
 .liambo__navbar-links {
@@ -27,8 +31,9 @@
     flex-direction: row;
 }
 
-.liambo__navbar-links_container p,
-.liambo__navbar-menu_container p {
+.liambo__navbar-links_container li,
+.liambo__navbar-menu_container li {
+    display: inline-block;
     color: #fff;
     font-family: var(--font-family);
     font-weight: 500;
@@ -38,4 +43,61 @@
 
     margin: 0 1rem;
     cursor: pointer;
+}
+
+.liambo__navbar-menu {
+    margin-left: 1rem;
+    
+    display: none;
+    position: relative;
+}
+
+.liambo__navbar-menu_symbol {
+    padding-right: 4rem;
+}
+
+.liambo__navbar-menu svg {
+    cursor: pointer;
+}
+
+.liambo__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: end;
+    background: var(--colour-navbar);
+    padding: 2rem 4rem 2rem 4rem;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.liambo__navbar-menu_container p {
+    margin: 1rem 0;
+}
+/* adjust max-width to navbar width. spacing on menu dropdown also seems to be off */
+@media screen and (max-width: 800px) {
+    .liambo__navbar-links_container {
+        display: none;
+    }
+    .liambo__navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .liambo__navbar {
+        padding: 2rem 0rem 2rem 2rem
+    }
+
+    .liambo__navbar-menu_symbol {
+        padding-right: 2rem;
+    }
 }

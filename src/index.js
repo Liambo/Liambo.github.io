@@ -1,7 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import * as ReactDOMClient from 'react-dom/client'
+import { HashRouter } from 'react-router-dom';
 
 import App from './App';
 import './index.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOMClient.createRoot(document.getElementById('root')).render(
+    <React.StrictMode>
+        <HashRouter>
+            <App/>
+        </HashRouter>
+    </React.StrictMode>
+);

@@ -1,0 +1,11 @@
+.liambo__copyright {
+    display: flex;
+    justify-content: center;
+}
+
+.liambo__copyright p {
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff;
+}

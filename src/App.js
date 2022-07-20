@@ -1,23 +1,26 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom';
 
-import { Navbar, Brand, CTA } from './components';
-import { Footer, Header, Blog, Possibility, Features, WhatGPT3} from './containers';
+import { Navbar, Copyright } from './components';
+import { Home, CV, Projects, Contact } from './containers';
 import './app.css';
 
 const App = () => {
   return (
     <div className='App'>
-      <div className='gradient__bg'>
+      <h1>Liam Boyd</h1>
+      <div className='navbar'>
         <Navbar />
-        <Header />
       </div>
-      <Brand />
-      <WhatGPT3 />
-      <Features />
-      <Possibility />
-      <CTA />
-      <Blog />
-      <Footer />
+      <div className='content'>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/cv' element={<CV/>}/>
+          <Route path='/projects' element={<Projects/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+        </Routes>
+      </div>
+      <Copyright />
     </div>
   )
 }
