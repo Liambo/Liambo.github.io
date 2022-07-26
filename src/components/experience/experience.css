@@ -1,0 +1,8 @@
+.liambo__experience-title {
+    margin-top: 2rem;
+}
+
+.liambo__experience-title {
+    display: flex;
+    justify-content: space-between;
+}

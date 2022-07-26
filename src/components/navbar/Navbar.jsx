@@ -6,16 +6,16 @@ import logo from '../../assets/icon.png';
 
 import './navbar.css';
 
-const Menu = () => (
+const Menu = ({bgChanger}) => (
   <ul>
-    <li><NavLink to='/'>Home</NavLink></li>
-    <li><NavLink to='/cv'>Curriculum Vitae</NavLink></li>
-    <li><NavLink to='/projects'>Projects</NavLink></li>
-    <li><NavLink to='/contact'>Contact</NavLink></li>
+    <li><NavLink to='/' onClick={() => bgChanger('#4dd6cb')}>Home</NavLink></li>
+    <li><NavLink to='/cv' onClick={() => bgChanger('#79c967')}>Curriculum Vitae</NavLink></li>
+    <li><NavLink to='/projects' onClick={() => bgChanger('#65b6db')}>Projects</NavLink></li>
+    <li><NavLink to='/contact' onClick={() => bgChanger('#77edaa')}>Contact</NavLink></li>
   </ul>
 )
 
-const Navbar = () => {
+const Navbar = ({bgChanger}) => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -25,7 +25,7 @@ const Navbar = () => {
           <img src={logo} alt='logo'/>
         </div>
         <div className='liambo__navbar-links_container'>
-          <Menu />
+          <Menu bgChanger={bgChanger}/>
         </div>
       </div>
       <div className='liambo__navbar-menu'>
@@ -38,7 +38,7 @@ const Navbar = () => {
         {toggleMenu && (
           <div className='liambo__navbar-menu_container scale-up-center'>
             <div className='liambo__navber-menu_container-links'>
-              <Menu />
+              <Menu bgChanger={bgChanger}/>
             </div>
           </div>
         )}

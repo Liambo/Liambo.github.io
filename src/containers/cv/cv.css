@@ -8,37 +8,48 @@
     line-height: 27px;
 }
 
-.liambo__cv-content_title {
-    margin-top: 2rem;
-}
-
-.liambo__cv-content_title p, h3 {
-    display: inline;
-    margin-right: 1rem;
-}
-
 .liambo__cv-content_intro {
     text-align: center;
+}
+
+.liambo__cv-content_education-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.liambo__cv-content_education-header svg {
+    cursor: pointer;
+}
+
+.liambo__cv-content_experience-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.liambo__cv-content_experience-header svg {
+    cursor: pointer;
 }
 
 .liambo__cv-content_education {
     background-color: #ccc;
     border-radius: 10px;
-    padding: 2rem;
-    margin-top: 1rem;
-}
-
-.liambo__cv-content_eduation li {
-    display: inline-block;
-}
-
-.liambo__cv-content_modules {
+    padding: 2rem 4rem;
     margin-top: 1rem;
 }
 
 .liambo__cv-content_experience {
     background-color: #ccc;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 2rem 4rem;
     margin-top: 1rem;
+}
+
+@media screen and (max-width: 550px) {
+    .liambo__cv-content_education {
+        padding: 2rem;
+    }
+
+    .liambo__cv-content_experience {
+        padding: 2rem;
+    }
 }

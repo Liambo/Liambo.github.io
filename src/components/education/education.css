@@ -1,0 +1,18 @@
+.liambo__education-title {
+    margin-top: 2rem;
+}
+
+.liambo__education-title p, h3 {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.liambo__education-modules {
+    margin-top: 1rem;
+}
+
+.liambo__education-modules_container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+}

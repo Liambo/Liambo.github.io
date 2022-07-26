@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
 
 import { Navbar, Copyright } from './components';
 import { Home, CV, Projects, Contact } from './containers';
 import './app.css';
+import GlobalStyle from './GlobalStyle';
 
 const App = () => {
+  const [bg, setBg] = useState('#ffcc00');
   return (
     <div className='App'>
+      <GlobalStyle bgColour={bg}/>
       <h1>Liam Boyd</h1>
       <div className='navbar'>
-        <Navbar />
+        <Navbar bgChanger={setBg}/>
       </div>
       <div className='content'>
         <Routes>
