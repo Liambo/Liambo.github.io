@@ -7,7 +7,7 @@ import './app.css';
 import GlobalStyle from './GlobalStyle';
 
 const App = () => {
-  const [bg, setBg] = useState('#ffcc00');
+  const [bg, setBg] = useState('#4dd6cb');
   return (
     <div className='App'>
       <GlobalStyle bgColour={bg}/>

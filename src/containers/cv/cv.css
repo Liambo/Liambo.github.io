@@ -53,3 +53,24 @@
         padding: 2rem;
     }
 }
+
+a.download-link:link
+{
+   color: #0000EE;
+   text-decoration: none;
+}
+a.download-link:visited
+{
+   color: #0000EE;
+   text-decoration: none;
+}
+a.download-link:hover
+{
+   color: #0000EE;
+   text-decoration: underline;
+}
+a.download-link:active
+{
+   color: #0000EE;
+   text-decoration: none;
+}

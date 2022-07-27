@@ -11,7 +11,7 @@ const CV = () => {
     <div className='liambo__cv section__padding'>
       <div className='liambo__cv-content'>
         <div className='liambo__cv-content_intro'>
-          <p>CV is available for download here. References are available upon request. Some additional information about education and experience is given below.</p>
+          <p>CV is available for download <a href='Curriculum_Vitae.pdf' download className='download-link'>here</a>. References are available upon request. Some additional information about education and experience is given below.</p>
         </div>
         <div className='liambo__cv-content_education'>
           <div className='liambo__cv-content_education-header'>
